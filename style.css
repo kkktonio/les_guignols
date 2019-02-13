@@ -72,8 +72,6 @@ kbd {
   color: #02A676;
 }
 
-
-
 .animation-target {
   -webkit-animation: animation 1000ms linear both;
   animation: animation 1000ms linear both;
