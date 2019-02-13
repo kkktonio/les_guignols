@@ -13,10 +13,10 @@ window.addEventListener("keydown", function(e) {
  if(!audio) return;
  audio.currentTime = 0 ;
  audio.play();
- key.classList.add("playing");
+ key.classList.add("playing", "animation-target");
 });
 function removeTransition(e){
- e.currentTarget.classList.remove("playing");
+ e.currentTarget.classList.remove("playing", "animation-target");
 }
 const keys = document.querySelectorAll(".key");
 keys.forEach((key) => key.addEventListener("transitionend",removeTransition));
